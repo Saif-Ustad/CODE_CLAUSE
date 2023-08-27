@@ -1,0 +1,97 @@
+@import "../css-config/mixins.scss";
+
+.text-editor-section {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    @include lg {
+        height: 100vh;
+        background: #374BFF;
+    }
+
+    .text-editor-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #F1F1F1;
+        border-radius: 10px;
+
+        .text-editor-content {
+            margin: 40px;
+            background: #F1F1F1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .editor_btns {
+                .upper {
+                    display: flex;
+                    justify-content: space-between;
+                    gap:15px;
+                    select {
+                        font-size: 22px;
+                        font-weight: 500;
+                        border: none;
+                        padding: 8px 20px;
+                        text-indent: 0.01px;
+                    }
+                    .font-color-selection {
+                        font-size: 22px;
+                        padding: 8px 20px;
+                        background-color: #fff;
+                        display: flex;
+                        align-items: center;
+                        gap:24px;
+                        input {
+                            appearance: none;
+                            background-color: transparent;
+                            width: 40px;
+                            height: 28px;
+                            border: none;
+                            cursor: pointer;
+                            border-radius: 15px;
+                        }
+                    }
+                    .background-color-selection {
+                        font-size: 22px;
+                        padding: 8px 20px;
+                        background-color: #fff;
+                        display: flex;
+                        align-items: center;
+                        gap:24px;
+                        input {
+                            appearance: none;
+                            background-color: transparent;
+                            width: 40px;
+                            height: 28px;
+                            border: none;
+                            cursor: pointer;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+                .lower {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 15px 0;
+                    button {
+                        background: #fff;
+                        padding: 10px 12px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .editor-part {
+                background-color: #fff;
+                height: 500px;
+                border: 1px solid rgb(210, 207, 207);
+                padding: 20px;
+                font-size: 16px;
+               
+               
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+@import "../css-config/mixins.scss";
+
+.TextTranslation-section {
+    width:100%;
+    height: 100vh;
+    // background: linear-gradient(140deg, #291369 0%, rgba(27, 192, 183, 0.00) 100%);
+    background-color: #045C8D;
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    .container {
+        width: 900px;
+        height: 500px;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 5px;
+        @include sm {
+            padding: 40px;
+            height: 565px;
+        }
+        .upper {
+            border: 1px solid black;
+            border-radius: 10px;
+            .top-heading {
+                display: flex;
+                justify-content: space-evenly;
+                border-bottom: 1px solid;
+                padding: 25px 0;
+                .switch {
+                    font-size: 20px;
+                    color: #045C8D;
+                    cursor: pointer;
+                }
+                select {
+                    border: none;
+                    font-size: 18px;
+                    @include sm {
+                        padding-right: 16px;
+                    }
+                }
+            }
+            .editor-area {
+                display: flex;
+                textarea {
+                    width:100%;
+                    height: 265px;
+                    padding: 15px;
+                    border-radius: 10px;    
+                    background: #F6F2F2;
+                    font-size: 18px;
+                    &::placeholder {
+                        font-size: 18px;
+                        font-weight: 200;
+                    }
+                }
+                .icons {
+                    display: flex;
+                    justify-content: center;
+                    gap:25px;
+                    padding: 15px 0 0 0;
+                    font-size: 20px;
+                    color: #A8A7A7;
+                    @include sm {
+                        justify-content: flex-start;
+                        padding: 15px 0 0 15px;
+                    }
+                    i {
+                        cursor: pointer;
+                    }
+                    
+
+                }
+                .left {
+                    flex:1;
+                    padding: 18px;
+                    border-right: 1px solid black;
+                    
+                }
+                .right {
+                    flex:1;
+                    padding: 18px;
+                }
+            }
+
+        }
+        .lower {
+            button {
+                width: 100%;
+                margin-top: 15px;
+                padding: 10px 0;
+                background-color: #045C8D;
+                color: #FFF;
+                font-size: 22px;
+                font-weight: 700;
+                border-radius: 10px;
+                border: 0;
+                &:hover {
+                    background-color: #053f5f;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        
+    }
+}
